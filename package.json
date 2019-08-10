@@ -1,0 +1,35 @@
+{
+  "name": "non-maybe",
+  "version": "1.0.0",
+  "description": "Assert a value's existence in flowtype. Functional wrapper for $NonMaybeType<T>. Works well with jest.",
+  "main": "nonMaybe.js",
+  "author": "Taylor Goolsby <taylorgoolsby@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "npm run jest-test && npm run flow-test && echo 'All tests passes and failed where expected.'",
+    "jest-test": "jest --runInBand --json --outputFile=output.txt || node checkAnswer.js",
+    "flow-test": "./node_modules/.bin/flow check --json > flowOutput.txt || cmp flowOutput.txt flowAnswer.txt",
+    "build": "babel nonMaybe.js.flow --out-file nonMaybe.js",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags",
+    "dry": "npm pack --dry-run --json --loglevel=silent"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-jest": "^24.8.0",
+    "flow-bin": "^0.103.0",
+    "jest": "^24.8.0"
+  },
+  "files": [
+    "/nonMaybe.js",
+    "/nonMaybe.js.flow",
+    "/package.json",
+    "/readme.md"
+  ]
+}
