@@ -1,6 +1,6 @@
 {
   "name": "non-maybe",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Assert a value's existence in flowtype. Functional wrapper for $NonMaybeType<T>. Works well with jest.",
   "main": "nonMaybe.js",
   "author": "Taylor Goolsby <taylorgoolsby@users.noreply.github.com>",
@@ -13,7 +13,7 @@
     "build": "babel nonMaybe.js.flow --out-file nonMaybe.js",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test",
-    "version": "git add -A src",
+    "version": "git add -A .",
     "postversion": "git push && git push --tags",
     "dry": "npm pack --dry-run --json --loglevel=silent"
   },
