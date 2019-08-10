@@ -4,6 +4,7 @@
   "description": "Assert a value's existence in flowtype. Functional wrapper for $NonMaybeType<T>. Works well with jest.",
   "main": "nonMaybe.js",
   "author": "Taylor Goolsby <taylorgoolsby@users.noreply.github.com>",
+  "repository": "git@github.com:taylorgoolsby/non-maybe.git",
   "license": "MIT",
   "private": false,
   "scripts": {
