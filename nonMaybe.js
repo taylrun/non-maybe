@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 function nonMaybe(value) {
   if (global.expect) {

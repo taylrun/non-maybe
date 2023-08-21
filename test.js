@@ -1,6 +1,6 @@
 // @flow
 
-const nonMaybe = require('./nonMaybe')
+import nonMaybe from './nonMaybe.js'
 
 test("Developer knows it exists, but flow doesn't.", () => {
   let a: string

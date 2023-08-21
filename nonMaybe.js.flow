@@ -12,4 +12,4 @@ function nonMaybe<T>(value: T): $NonMaybeType<T> {
   return value
 }
 
-module.exports = nonMaybe
+export default nonMaybe

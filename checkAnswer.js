@@ -1,5 +1,8 @@
-const path = require('path')
-const fs = require('fs')
+import path, {dirname} from 'path'
+import fs from 'fs'
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const output = fs.readFileSync(path.resolve(__dirname, './output.txt'), 'utf-8')
 const answer = fs.readFileSync(path.resolve(__dirname, './answer.txt'), 'utf-8')
