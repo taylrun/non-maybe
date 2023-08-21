@@ -7,6 +7,10 @@
   "repository": "git@github.com:taylorgoolsby/non-maybe.git",
   "license": "MIT",
   "private": false,
+  "type": "module",
+  "exports": {
+    ".": "./nonMaybe.js"
+  },
   "scripts": {
     "test": "npm run jest-test && npm run flow-test && echo 'All tests passes and failed where expected.'",
     "jest-test": "jest --runInBand --json --outputFile=output.txt || node checkAnswer.js",

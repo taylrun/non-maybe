@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 
 function nonMaybe(value) {
   if (global.expect) {
@@ -13,4 +13,4 @@ function nonMaybe(value) {
   return value;
 }
 
-module.exports = nonMaybe;
+export default nonMaybe
