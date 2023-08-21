@@ -12,22 +12,12 @@
     ".": "./nonMaybe.js"
   },
   "scripts": {
-    "test": "echo 'pass'",
-    "build": "babel nonMaybe.js.flow --out-file nonMaybe.js",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run test",
     "version": "git add -A .",
     "postversion": "git push && git push --tags",
     "dry": "npm pack --dry-run --json --loglevel=silent"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-flow": "^7.0.0",
-    "babel-jest": "^24.8.0",
-    "flow-bin": "^0.103.0",
-    "jest": "^24.8.0"
+    "flow-bin": "^0.103.0"
   },
   "files": [
     "/nonMaybe.js",
