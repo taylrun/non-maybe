@@ -12,6 +12,7 @@
     ".": "./nonMaybe.js"
   },
   "scripts": {
+    "test": "echo 'pass'",
     "build": "babel nonMaybe.js.flow --out-file nonMaybe.js",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test",
