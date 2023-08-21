@@ -13,6 +13,8 @@ const parsedAnswer = JSON.parse(answer)
 const outputResults = parsedOutput.testResults[0].assertionResults
 const answerResults = parsedAnswer.testResults[0].assertionResults
 
+console.log('outputResults', outputResults)
+
 for (let i = 0; i < outputResults.length; i++) {
   if (
     outputResults[i].fullName === answerResults[i].fullName &&
