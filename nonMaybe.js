@@ -1,7 +1,7 @@
 "use strict";
 
 function nonMaybe(value) {
-  if (global.expect) {
+  if (global?.expect) {
     expect(value).toBeTruthy();
   }
 
