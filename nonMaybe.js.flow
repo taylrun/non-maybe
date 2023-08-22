@@ -1,7 +1,7 @@
 // @flow
 
 function nonMaybe<T>(value: T): $NonMaybeType<T> {
-  if (global?.expect) {
+  if (typeof global !== 'undefined' && global?.expect) {
     expect(value).toBeTruthy()
   }
 
